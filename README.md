@@ -3,33 +3,39 @@
 
 Este repositorio contiene el notebook **`labNN_PTIA_2025_2.ipynb`**, desarrollado en el marco del curso **Principios y Tecnologías de Inteligencia Artificial (PTIA) – 2025-2** en la Escuela Colombiana de Ingeniería.  
 
-El objetivo del laboratorio es introducir al estudiante en la implementación **desde cero** de una red neuronal totalmente conectada, aplicando el algoritmo de **propagación hacia adelante (feed-forward)** y **retropropagación del error (backpropagation)** para problemas de clasificación.  
+El laboratorio guía paso a paso en la implementación de redes neuronales artificiales, tanto desde cero como utilizando un framework moderno.  
 
 ---
 
 ## Contenido del laboratorio  
 
-El notebook está organizado en secciones que guían al estudiante en la construcción de una red neuronal:  
+El notebook está dividido en **dos partes principales**:  
 
-- **Objetivos y reglas de entrega**  
-- **Parte I: Implementación de una red neuronal desde cero**  
-  - Derivación de funciones necesarias  
-  - Funciones base: métricas, costo y activaciones  
-  - Implementación de capas densas  
-  - Construcción de la red neuronal totalmente conectada  
-  - Entrenamiento con datos de ejemplo  
-  - Visualización de resultados (pérdida y accuracy)  
+### 🔹 Parte I. Implementación desde cero  
+- Derivación de funciones necesarias  
+- Funciones base: métricas, costo y activaciones  
+- Implementación de capas densas  
+- Construcción de una red neuronal totalmente conectada  
+- Entrenamiento con datos de ejemplo  
+- Visualización de métricas de desempeño (pérdida y accuracy)  
+
+### 🔹 Parte II. Uso de Keras  
+- Introducción a un framework de redes neuronales  
+- Implementación de la misma arquitectura con **Keras**  
+- Entrenamiento y evaluación con el framework  
+- Comparación de resultados frente a la implementación manual  
 
 ---
 
 ## Temáticas principales  
 
 - Fundamentos de redes neuronales artificiales  
-- Funciones de activación y su derivada  
-- Función de costo y métricas de evaluación  
-- Arquitectura de una red neuronal tipo **Dense**  
-- Algoritmo de entrenamiento con **backpropagation**  
-- Experimentación y análisis de resultados  
+- Propagación hacia adelante (**feed-forward**)  
+- Retropropagación del error (**backpropagation**)  
+- Funciones de activación y sus derivadas  
+- Funciones de costo y métricas de evaluación  
+- Arquitectura de redes totalmente conectadas (**Dense**)  
+- Introducción y uso del framework **Keras**  
 
 ---
 
@@ -39,13 +45,13 @@ Para ejecutar el notebook se recomienda:
 
 - **Python 3.9+**  
 - Jupyter Notebook o JupyterLab  
-- Librerías: `numpy`, `matplotlib`  
+- Librerías:  
+  - `numpy`  
+  - `matplotlib`  
+  - `tensorflow` (para Keras)  
 
----
+Instalación de dependencias:  
+```bash
+pip install numpy matplotlib tensorflow jupyter
 
-## Ejecución  
 
-1. Clona este repositorio:  
-   ```bash
-   git clone https://github.com/usuario/labNN_PTIA_2025_2.git
-   cd labNN_PTIA_2025_2
